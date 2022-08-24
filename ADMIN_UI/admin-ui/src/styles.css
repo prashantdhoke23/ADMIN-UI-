@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Ubuntu&display=swap');
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+.icon-display {
+   transform: scale(2);
+   background-color: blue;
+   color: green;
+   size: 600px;
+   width: 700px;
+}
+
+.table_size{
+    width:60%;
+    height: 60%;
+    border: 10%;
+}
+
+.submit-button {
+background: #B9DFFF;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 20px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow: none;
+}
+.form-submit-button:hover {
+background: #016ABC;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 20px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow: none;
+}
+
+.big{
+    height: 50%;
+    width: 50%;
+    size: 20%;
+    border: 10%;
+}
+
+h2{
+font-size: 45px`;
+}

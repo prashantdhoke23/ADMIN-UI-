@@ -1,0 +1,85 @@
+.icon-display {
+   transform: scale(1.2);
+   }
+
+.table_size{
+    width:100%;
+    height: 60%;
+    border: 10%;
+}
+#add{
+    transform: scale(3.2);
+    color: rgb(40, 179, 98);
+    
+}
+/* .submit{
+    background-color: bisque;
+    size: 10rem;
+} */
+
+/* .material-icons {
+  color: green;
+  }
+
+  .material-icons.active {
+      color: blue;
+    } */
+table{
+    border: 10%;
+    width: 100%;
+    
+}
+.submit-button{
+    width: 25%;
+    height: 10%;
+    border: none;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+button {
+border: none;
+}
+
+td{
+    background-color: #eae1e1;
+}
+
+thead{
+    background-color: #749f64;
+}
+
+#temp{
+    font-size: 17px;
+}
+
+#form-id{
+    background-color: #d9e9d3;
+}
+
+#table-id{
+    background-color: rgb(218, 199, 202);
+}
+
+
+/* .page{
+    width: 80%;
+   
+
+} */
+
+.page{
+       /* // background: linear-gradient(100deg, rgba(63, 63, 63, 0.8) 0%, rgba(255, 255, 255, 0) 25%); */
+/* background: rgb(2,0,36); */
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,48,40,1) 35%, rgba(0,212,255,1) 100%);
+}

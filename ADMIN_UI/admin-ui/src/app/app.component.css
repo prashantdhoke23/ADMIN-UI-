@@ -1,0 +1,14 @@
+.home_icon{
+    width: 30%;
+    height: 30%;
+}
+
+#home{
+    transform: scale(2);
+    width: 30%;
+    height: 30%;
+}
+
+#add{
+    transform: scale(2.8);
+}

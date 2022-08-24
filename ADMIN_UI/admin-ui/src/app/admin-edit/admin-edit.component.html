@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+</head>
+
+<body>
+    <h1>Admin - Edit - Form </h1>
+    <br><br>
+
+    <form [formGroup]="adminForm" (ngSubmit)="submitAdminForm()">
+
+        <div class="container">
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" [(ngModel)]="detail.name" formControlName="adminName" class="form-control" />
+            </div>
+            <div *ngIf="adminForm.controls['adminName'].hasError('required')" class="alert alert-danger">
+                Please add your name
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" [(ngModel)]="admin.password" formControlName="adminPass"
+                    placeholder="please enter the pasword " class="form-control" />
+            </div>
+            <div *ngIf="adminForm.controls['adminPass'].hasError('required')" class="alert alert-danger">
+                Please fill the password column
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" [(ngModel)]="detail.email" formControlName="adminMail"
+                    placeholder="{{detail.email}}" class="form-control" />
+            </div>
+            <div *ngIf="adminForm.controls['adminMail'].hasError('required')" class="alert alert-danger">
+                Please fill the email column
+            </div>
+
+            <div class="form-group">
+                <label>Mobile</label>
+                <input type="number" [(ngModel)]="detail.phNumber" min="10" max="10" formControlName="adminPhone"
+                    placeholder="{{detail.Mobile}}" class="form-control" />
+            </div>
+            <div *ngIf="adminForm.controls['adminPhone'].hasError('required')" class="alert alert-danger">
+                Please fill the phone number column
+            </div>
+
+            <br />
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Update</button>
+            </div>
+            <br />
+        </div>
+
+        <!-- <div class="form-group">
+
+        <input type="text" [(ngModel)]="text" placeholder="search here" class="form-control"
+            formControlName="searchText" />
+
+        <button type="button" (click)="searchByCriteria(text)">Search/button>
+    </div> -->
+
+    </form>
+
+
+    <table class="table table-striped table-hover">
+        <thead>
+
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">E-Mail</th>
+                <th scope="col">Mobile</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+
+            <tr *ngFor="let detail of forms">
+                <td>{{detail.id}}</td>
+                <td>{{detail.name}}</td>
+                <td>{{detail.email}}</td>
+                <td>{{detail.phNumber}}</td>
+
+
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
